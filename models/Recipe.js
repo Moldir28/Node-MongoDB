@@ -11,17 +11,17 @@ const RecipeSchema = new Schema({
   image: {
     type: String,
     required: [true, 'Please add an image'],
-    maxlength: [200, 'max 200 chars are allowed for the image']
+    maxlength: [200, 'max 500 chars are allowed for the image']
   },
   ingredients: {
     type: String,
     required: [true, 'Please add ingredients'],
-    maxlength: [700, 'max 700 chars are allowed for the ingredients']
+    maxlength: [700, 'max 1000 chars are allowed for the ingredients']
   }, 
   description: {
      type: String,
      required: [true, 'Please add a description'],
-     maxlength: [700, 'max 700 chars are allowed for the ingredients']
+     maxlength: [700, 'max 1000 chars are allowed for the ingredients']
   }
 
 });
