@@ -2,7 +2,8 @@ const express = require("express");
 
 const {
   getRecipes,
-  getRecipe
+  getRecipe,
+  createRecipe
 } = require('../controllers/recipes');
 
 const api = express.Router();
@@ -10,7 +11,7 @@ const api = express.Router();
 api
   .route('/') 
   .get(getRecipes)
-  //.post(createRecipe)
+  .post(createRecipe)
 
 api
   .route('/:id')
